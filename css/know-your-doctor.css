@@ -1,0 +1,38 @@
+main {
+    width: 70%;
+    margin: auto;
+
+    /* border: 1px solid black; */
+}
+
+main figure {
+    margin-top: 2rem;
+}
+
+img {
+    width: 14rem;
+    height: auto;
+}
+
+main figure figcaption {
+    font-size: 0.75rem;
+}
+
+main .bio {
+    margin-top: 2rem;
+}
+
+.bio .important-info {
+    text-align: justify;
+    width: 32rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.bio .important-info span {
+    font-weight: var(--font-weight-bold);
+}
+
+.bio .important-info ul ul {
+    list-style-position: inside;
+}
