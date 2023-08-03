@@ -1,0 +1,32 @@
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    padding: 0 10%;
+    text-align: start;
+}
+
+.testimonial {
+    margin-top: 2rem;
+    display: flex;
+    height: 50vh;
+}
+
+.testimonial .description {
+    padding-left: 2rem;
+}
+
+.video-testimonials p {
+    padding-top: 1.5rem;
+    text-align: justify;
+    width: 30rem;
+}
+
+.others h2 {
+    margin-bottom: 2rem;
+}
+
+.others img {
+    width: 40vw;
+    height: auto;
+}

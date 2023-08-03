@@ -6,8 +6,6 @@
 }
 
 .card {
-    /* flex: 0 0 calc(50% - 1rem); */
-
     border: 1px solid black;
 }
 
