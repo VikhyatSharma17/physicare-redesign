@@ -16,10 +16,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    width: 90%;
-
-    /* border: 10px solid rgb(242, 255, 3); */
 }
+
+.photo-grid {
+    width: 100%;
+}
+
 
 .photo-grid .image img {
     width: 100%;
@@ -35,15 +37,11 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 1.5rem;
-    background-color: #EDEDED;
-    border-radius: var(--border-radius);
-    /* border: 1px solid black; */
+    padding-bottom: 1.5rem;
 }
 
 .consultation-link .image img {
-    width: 70%;
-    height: auto;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .consultation-link .heading {
@@ -56,12 +54,13 @@
     height: 10rem;
     text-align: justify;
     margin-top: 2rem;
-    margin-bottom: 1rem;
-
-    /* border: 1px solid red; */
+    margin-bottom: 2rem;
 }
 
 .consultation-link .contact-link a {
+    padding: 0.8rem;
+    border-radius: var(--border-radius);
+
     /* hover effect */
     background-image: linear-gradient(var(--background-color), var(--background-color));
     background-size: 100% 100%;
