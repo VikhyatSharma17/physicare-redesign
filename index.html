@@ -13,39 +13,165 @@
     <body>
         <div class="content">
             <header>
-                <div class="brand">
+                <a href="./index.html" id="brand-logo">
+                    <img src="https://preventivephysiotherapy.com/wp-content/uploads/2021/02/cropped-1540274994894_Logo2-page-001.jpg" alt="Physicare Logo">
+                    <span>The Physicare</span>
+                </a>
+                <!-- <div class="brand">
                     <img 
                         alt="Physicare Logo" 
                         src="https://preventivephysiotherapy.com/wp-content/uploads/2021/02/cropped-1540274994894_Logo2-page-001.jpg" 
                         class="logo">
                     <div class="brand-name">
-                        <h2>The Physicare</h2>
-                        <h4>The Caring hand you deserve</h4>
-                    </div>
-                </div>
+                        <h4>The Physicare</h4> -->
+                        <!-- <h4>The Caring hand you deserve</h4> -->
+                    <!-- </div> -->
+                <!-- </div> -->
     
                 <div class="navbar">
                     <ul class="nav-links">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <!-- <li><a href="./index.html">Home</a></li> -->
+                        <li><a href="./contact.html">Contact Us</a></li>
                         <li><a href="./know-your-doctor.html">Know your Doctor</a></li>
-                        <li><a href="./specialization.html">Specialization</a></li>
+                        <!-- <li><a href="./specialization.html">Specialization</a></li> -->
                         <li><a href="./techniques.html">Techniques</a></li>
                         <li><a href="./testimonials.html">Testimonials</a></li>
                         <li><a href="./blogs.html">Information Blogs</a></li>
                         <li><a href="./solutions-offered.html">Solutions Offered</a></li>
-                        <li><a href="./index.html">Book An Appointment</a></li>
+                        <li class="book-appointment"><a href="./book-appointment.html">Book An Appointment</a></li>
+                    </ul>
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a> -->
+                </div>
+
+                <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+                    <i class="fa fa-bars"></i>
+                    <ul class="nav-links">
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./know-your-doctor.html">Know your Doctor</a></li>
+                        <!-- <li><a href="./specialization.html">Specialization</a></li> -->
+                        <li><a href="./techniques.html">Techniques</a></li>
+                        <li><a href="./testimonials.html">Testimonials</a></li>
+                        <li><a href="./blogs.html">Information Blogs</a></li>
+                        <li><a href="./solutions-offered.html">Solutions Offered</a></li>
+                        <li class="book-appointment"><a href="./book-appointment.html">Book An Appointment</a></li>
                     </ul>
                 </div>
             </header>
     
             <main>
-                <div class="book-appointment">
-                    <!-- Calendly inline widget begin -->
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/bniphysio"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                    <!-- Calendly inline widget end -->
-                </div>
+                <section class="intro">
+                    <p>
+                        Discover our Niche Super Focused Specialized Health Programs, tailored to address crucial areas of concern, with an emphasis on <span>'Preventive Care at the Right Time'</span>. At our health clinic, we are dedicated to making Preventive Care the cornerstone of well-being for all. 
+                    </p>
+                    <br>
+
+                    Our mission is to integrate these programs into various segments of society, promoting Preventive Care as an essential foundation for any organization prioritizing the health and welfare of its members, whether it be: <br>
+                    
+                    <ul>
+                        <li>Senior Citizen Associations / RWA / Old Age Homes</li>
+                        <li>Schools</li>
+                        <li>Corporate Houses</li>
+                        <li>Business Houses</li>
+                        <li>Business Owners</li>
+                    </ul>
+                    <br>
+
+                    Our comprehensive Programs include:
+                    <ul id="programs-list">
+                        <li><a href="#geriatric-care">Preventive Geriatric Care:</a> Empowering our seniors to lead healthier and more fulfilling lives through personalized preventive care.</li>
+                        <li><a href="#school-care">Preventive School Care for Children and Teachers:</a> Ensuring the well-being and vitality of our young learners and educators through preventive measures.</li>
+                        <li><a href="#ergonomic-care">Preventive Ergonomic Care:</a> Enhancing workplace health and productivity by addressing ergonomic needs and promoting proper practices.</li>
+                        <li><a href="#workplace-care">Preventive Exercise@Workplace:</a> Fostering a culture of fitness and well-being in the corporate world, promoting physical activity at the workplace.</li>
+                    </ul>
+                    <br>
+
+                    These programs can be seamlessly implemented for both small and large groups, making health and wellness accessible to all. Join us on this transformative journey towards a healthier and happier life!
+                    <br>
+                </section>
+
+                <section class="programs">
+                    <div id="geriatric-care">
+                        <div class="photo">
+                            <figure>
+                                <img src="https://preventivephysiotherapy.com/wp-content/uploads/2021/05/falls-prevention-elderly-inline.jpg" alt="Elderly Photo 1">
+                            </figure>
+                            <!-- <figure>
+                                <img src="https://preventivephysiotherapy.com/wp-content/uploads/2021/05/Elderly-Person-Fallen-300x219.jpg" alt="Elderly Photo 2">
+                            </figure> -->
+                        </div>
+                        <div class="information">
+                            <h3>Preventive Geriatric Care</h3>
+                            <p>
+                                Elderly people, in our society, are our treasure and we must do something to take care of them. With growing age, we lose natural muscle mass by 1% per annum, without any disease process. The concerned areas in elderly are two ways driven: 
+                                <br>
+                                <ul>
+                                    <li>Without any Disease Process:
+                                        <ul>
+                                            <li>Reduced Muscular tone</li>
+                                            <li>Reduced Balance and coordination</li>
+                                            <li>Reduced attention span etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>With Disease Process:
+                                        <ul>
+                                            <li>Ataxia</li>
+                                            <li>Partial paralysis / Full Paralysis</li>
+                                            <li>Diabetic Neuropathy etc</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="school-care">
+                        <div class="information">
+                            <h3>
+                                Preventive School Care for Children and Teachers
+                            </h3>
+                            <p>
+                                Early experiences leave a lasting impact. We scientifically educate school children on exercises, fitness, and postures for a healthier future. Customized modules, integrated into school hours, foster well-being. Teachers receive personalized solutions too. <br>
+                                All within the school facility, <span>building a healthier tomorrow!</span>
+                            </p>   
+                        </div>
+                        <div class="photo">
+                            <img src="https://preventivephysiotherapy.com/wp-content/uploads/2021/03/DSC01832-1536x1152.jpg" alt="School Preventive Care">
+                        </div>
+                    </div>
+
+                    <div id="ergonomic-care">
+                        <div class="photo">
+                            <img src="https://preventivephysiotherapy.com/wp-content/uploads/2021/03/IMG_5230-1536x1024.jpg" alt="Ergonomic Care">
+                        </div>
+                        <div class="information">
+                            <h3>Preventive Ergonomic Care</h3>
+                            <p>
+                                To combat the challenges causing workforce illnesses, leading to increased absenteeism and reduced working hours, we offer expert ergonomic advice for safe job actions and workplace modifications tailored to specific job needs. <br>
+                                
+                                Our goal is to foster a <span>high work spirit and agility among employees, ensuring a healthier and more productive workforce</span>.        
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="workplace-care">
+                        <div class="information">
+                            <h3>Preventive Exercise@Workplace</h3>
+                            <p>
+                                Exercise at the workplace is an enlightening solution for professionals, especially those extensively using computers, to prevent issues like neck pain, back pain, wrist, and finger discomfort caused by poor posture and stress during work. <br>
+
+                                Recognizing the need for accessible fitness options, I came up with the concept of <span>exercise@workplace</span>, catering to employees of all ranks.<br>
+                                
+                                <span>Prioritizing your well-being amidst office demands is now within reach!</span>    
+                            </p>
+                        </div>
+
+                        <div class="photo">
+                            <img src="https://preventivephysiotherapy.com/wp-content/uploads/2021/03/IMG-20180712-WA0017.jpg" alt="Workplace Care 1">
+                        </div>
+
+                        <!-- <img src="	https://preventivephysiotherapy.com/wp-content/uploads/2021/03/DSC01466-Copy-1024x768.jpg" alt="Workplace Care 2"> -->
+                    </div>
+                </section>
             </main>
     
             <footer>
@@ -59,6 +185,11 @@
                 </div>
                 <p class="copyright">&copy 2023 The Physicare</p>
             </footer>
+            <script>
+                function toggleMobileMenu(menu) {
+                    menu.classList.toggle('open');
+                }
+            </script>
         </div>
     </body>
 </html>

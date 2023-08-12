@@ -12,6 +12,8 @@
     --font-color: #2b2d42;
     --background-color: #ef233c;
     --background-color-2: #d80032;
+    --overlay-color: #090909;
+    --card-color: #edf2f4;
     /* --  set 2  -- */
 
     --font-weight-light: 400;
@@ -32,7 +34,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #f0f0f0;
-    background-color: #f3f7f0;
+    /* background-color: #f3f7f0; */
 }
 
 .content {
@@ -45,106 +47,133 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-}
 
-header {
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
-}
-
-header .brand {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-header .brand .logo {
-    max-width: 5rem;
-    max-height: 5rem;
-}
-
-header .navbar {
-    width: 90%;
-}
-
-header .nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-a {
-    color: var(--font-color);
-}
-
-header a, footer a {
-    text-decoration: none;
-    padding: 0.5rem;
-    margin-top: 2rem;
-    max-width: fit-content;
-    border-radius: var(--border-radius);
-
-    /* hover effect */
-    background-image: linear-gradient(var(--background-color-2), var(--background-color-2));
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    transition: .4s;
-}
-
-a:hover, a:focus {
-    background-size: 100% 100%;
+    /* border: 5px solid blue; */
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-}
-
-main .book-appointment {
-    padding: 2rem;
-    width: 60rem;
-    min-height: 45rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-
-}
-
-.calendly-inline-widget {
+    padding: 0 10%;
+    padding-top: 3rem;
+    text-align: justify;
     position: relative;
-    min-width: 200px;
-    max-width: 550px;
-    height: 300px;
-    max-height: 750px;
+    top: 5rem;
+
+    border: 1px solid goldenrod;
 }
 
-footer {
-    width: 100%;
-    height: 5rem;
-    background-color: var(--background-color);
-    margin-top: 2rem;
+main ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
 
-    flex-shrink: 0;
+.intro p {
+    font-weight: var(--font-weight-bold);
+}
+
+.intro p span {
+    color: var(--background-color);
+}
+
+.intro ul a {
+    font-weight: var(--font-weight-bold);
+    color: black;
+    background-image: none;
+    text-decoration: underline;
+    text-decoration-color: var(--background-color);
+    padding: 0;    
+}
+
+.intro a:hover {
+    color: var(--background-color);
+    text-decoration: none;
+    
+}
+
+.programs {
+    margin-top: 2rem;
+}
+
+.programs > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+
+    height: 25rem;
+    margin-bottom: 5rem;
+}
+
+.programs img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.programs ul ul {
+    padding-left: 1rem;
+    list-style-type: circle;
+}
+
+.programs .information {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-footer .social-media {
-    margin-bottom: 0.5rem;
+.information p {
+    margin-top: 1rem;
 }
 
-footer .social-media .links {
-    display: flex;
-    list-style-type: none;
+.information p span {
+    color: var(--background-color);
+    font-weight: var(--font-weight-bold);
 }
+
+@media screen and (max-width: 1200px) {
+    main {
+        padding: 2rem 5%;
+    }
+
+    .programs > div .information {
+        height: 25rem;
+        padding-top: 1rem;
+        justify-content: start;
+    }
+
+    .programs > div {
+        grid-template-columns: 1fr;
+        gap: 0;
+        height: auto;
+    }
+
+    .programs div img {
+        height: 15rem;
+    }
+
+    .programs div .photo:nth-child(even) {
+        position: relative;
+        top: -25rem;
+    }
+
+    .programs div .information:nth-child(odd) {
+        position: relative;
+        top: 15rem;
+    }   
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    .programs div img {
+        height: 20rem;
+    }
+
+    .programs div .information:nth-child(odd) {
+        position: relative;
+        top: 20rem;
+    }  
+}
+
+
 
 
 /* common css */
@@ -184,19 +213,205 @@ footer .social-media .links {
   }
 
 .card {
-background-color: #edf2f4;
-border-radius: var(--border-radius);
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
 }
 
-@media screen and (max-width: 950px) {
+header a, footer a {
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    max-width: fit-content;
+    border-radius: var(--border-radius);
+
+    /* hover effect
+    background-image: linear-gradient(var(--background-color-2), var(--background-color-2));
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s; */
+}
+
+/* a:hover, a:focus {
+    background-size: 100% 100%;
+} */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    z-index: 1;
+
+    border: 2px solid brown;
+}
+
+header a {
+    font-weight: var(--font-weight-bold);
+    color: black;
+    background-image: none;
+    text-decoration: underline;
+    text-decoration-color: var(--background-color);
+    padding: 0;    
+}
+
+header a:hover, header a:focus {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+header #brand-logo {
+    text-align: center;
+    margin-top: 0;
+    text-decoration: none;
+
+    /* border: 1px solid rebeccapurple; */
+}
+
+header #brand-logo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+header #brand-logo span {
+    position: relative;
+    bottom: 1rem;
+    font-size: var(--font-weight-bold);
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-around;
+
+    /* border: 1px solid orange; */
+}
+
+header .nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .nav-links ul li {
+    height: 100%;
+}
+
+header .nav-links .book-appointment {
+    background-color: var(--background-color);
+    padding: 0.5rem 0.3rem;
+    border-radius: var(--border-radius);
+}
+
+.book-appointment:hover {
+    transform: scale(1.1);
+}
+
+.book-appointment a:hover {
+    color: var(--font-color);
+}
+
+header .mobile-menu > i {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.open .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    background-color: var(--background-color);
+    width: 60%;
+    margin-right: 40%;
+    z-index: 1;
+    /* box-shadow: rgba(0, 0, 0, 0.2); */
+
+}
+
+.mobile-menu .nav-links {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 5rem);
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--background-color);
+    margin-top: 2rem;
+
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-media {
+    margin-bottom: 0.5rem;
+}
+
+footer .social-media .links {
+    display: flex;
+    list-style-type: none;
+}
+
+footer a {
+    color: var(--font-color);
+}
+
+
+@media screen and (max-width: 1200px) {
     .container {
         grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     }
 
     main .book-appointment {
-        width: 25rem;
+        width: 20rem;
         min-height: 20rem;
     
+    }
+
+    header .navbar {
+        display: none;
+    }
+
+    header .mobile-menu {
+        display: block;
+    }
+
+    header .mobile-menu > i {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    header #brand-logo {
+        position: absolute;
+        left: 30%;
+    }
+
+    header .nav-links .book-appointment {
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    header #brand-logo {
+        left: 40%;
     }
 }
 /* common css */
