@@ -1,12 +1,11 @@
 main {
     width: 70%;
-    margin: auto;
-
-    /* border: 1px solid black; */
+    margin: auto auto 1rem auto;
 }
 
 main figure {
     margin-top: 2rem;
+    text-align: center;
 }
 
 img {
@@ -22,6 +21,11 @@ main .bio {
     margin-top: 2rem;
 }
 
+.bio h2 {
+    margin: auto;
+    width: 32rem;
+}
+
 .bio .important-info {
     text-align: justify;
     width: 32rem;
@@ -34,5 +38,15 @@ main .bio {
 }
 
 .bio .important-info ul ul {
-    list-style-position: inside;
+        margin-left: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+    main {
+        width: 100%;
+    }
+
+    .bio .important-info {
+        width: 100%;
+    }
 }

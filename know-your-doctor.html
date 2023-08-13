@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" type="text/css" href=".//css/know-your-doctor.css">
         <link rel="icon" href="./resources/logo.ico">
+        <script src="./js/styles.js"></script>
 
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/e830041e3b.js" crossorigin="anonymous"></script>
@@ -14,31 +15,37 @@
     <body>
         <div class="content">
             <header>
-                <div class="brand">
-                    <img 
-                        alt="Physicare Logo" 
-                        src="https://preventivephysiotherapy.com/wp-content/uploads/2021/02/cropped-1540274994894_Logo2-page-001.jpg" 
-                        class="logo">
-                    <div class="brand-name">
-                        <h2>The Physicare</h2>
-                        <h4>The Caring hand you deserve</h4>
-                    </div>
-                </div>
+                <a href="./index.html" id="brand-logo">
+                    <img src="https://preventivephysiotherapy.com/wp-content/uploads/2021/02/cropped-1540274994894_Logo2-page-001.jpg" alt="Physicare Logo">
+                    <span>The Physicare</span>
+                </a>
     
                 <div class="navbar">
                     <ul class="nav-links">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
                         <li><a href="./know-your-doctor.html">Know your Doctor</a></li>
-                        <li><a href="./specialization.html">Specialization</a></li>
                         <li><a href="./techniques.html">Techniques</a></li>
                         <li><a href="./testimonials.html">Testimonials</a></li>
                         <li><a href="./blogs.html">Information Blogs</a></li>
                         <li><a href="./solutions-offered.html">Solutions Offered</a></li>
-                        <li><a href="./index.html">Book An Appointment</a></li>
+                        <li class="book-appointment"><a href="./book-appointment.html">Book An Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu" onclick="toggleMobileMenu(this)">
+                    <i class="fa fa-bars"></i>
+                    <ul class="nav-links">
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./know-your-doctor.html">Know your Doctor</a></li>
+                        <li><a href="./techniques.html">Techniques</a></li>
+                        <li><a href="./testimonials.html">Testimonials</a></li>
+                        <li><a href="./blogs.html">Information Blogs</a></li>
+                        <li><a href="./solutions-offered.html">Solutions Offered</a></li>
+                        <li class="book-appointment"><a href="./book-appointment.html">Book An Appointment</a></li>
                     </ul>
                 </div>
             </header>
+    
     
             <main>
                 <figure class="profile-photo">

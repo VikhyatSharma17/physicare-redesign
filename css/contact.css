@@ -72,3 +72,61 @@
     box-shadow: 0 0.5rem 0.5rem -0.4rem;
     background-color: var(--background-color-2);
 }
+
+@media screen and (max-width: 950px) {
+    main {
+        padding-top: 0;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro h2 {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .consultation-links {
+        margin-top: 2rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .container .card .heading{
+        font-size: 1.7rem;
+    }
+
+    .container .card .desc {
+        width: 90%;
+        height: 7rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+    .intro {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .intro h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .consultation-links {
+        margin-top: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container .card .desc {
+        margin-bottom: 4rem;
+    }
+}
