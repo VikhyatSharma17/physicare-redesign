@@ -42,7 +42,31 @@ main .bio {
 }
 
 @media screen and (max-width: 950px) {
+    .content {
+        max-width: 100vw;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
     main {
+        text-align: center;
+        width: 100%;
+    }
+
+    main figure {
+        margin-top: 1rem;
+        width: 100%;
+
+        border: 1px solid black;
+    }
+
+    main .profile-photo img {
+        width: 10rem;
+    }
+
+    .bio h2 {
         width: 100%;
     }
 

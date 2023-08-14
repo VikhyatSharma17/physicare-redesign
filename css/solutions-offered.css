@@ -1,5 +1,11 @@
-.card-content ul {
-  list-style-position: inside;
-  text-align: left;
-  padding-left: 2rem;
+main > h2 {
+  padding-left: 5%;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  main > h2 {
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
 }
